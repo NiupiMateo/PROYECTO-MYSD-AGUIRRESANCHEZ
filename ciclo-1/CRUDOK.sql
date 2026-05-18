@@ -1,10 +1,7 @@
 /* PROYECTO: Formando Campeones CRUDOK
-   CICLO 4 - INGRESO DE DATOS CORRECTOS
+   CICLO 1 - INGRESO DE DATOS CORRECTOS
    OBJETIVO: Probar los procedimientos con datos válidos (casos exitosos)
-   IDs usados: +900 para evitar conflictos con datos existentes
-   NOTA: Este script es autosuficiente. Inserta todos los datos base
-         necesarios directamente en las tablas antes de usar los packages.
-*/
+   IDs usados: +900 para evitar conflictos con datos existentes */
 
 /* PASO 1: LIMPIEZA PREVIA */
 
