@@ -1,8 +1,6 @@
 /* PROYECTO: Formando Campeones
-   CICLO 4 - SEGURIDAD
-   OBJETIVO: Definición de roles y permisos con paquetes actores (WRAPPER)
-   NOTA: Ejecutar conectado como SYSTEM o DBA con privilegios suficientes
-*/
+   CICLO 1 - SEGURIDAD
+   OBJETIVO: Definición de roles y permisos con paquetes actores (WRAPPER)*/
 
 /* PASO 1: CREAR ROLES COMUNES (C## requerido en Oracle Multitenant CDB) */
 CREATE ROLE C##ADMINISTRADOR;
