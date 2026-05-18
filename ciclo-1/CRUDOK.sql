@@ -6,11 +6,7 @@
          necesarios directamente en las tablas antes de usar los packages.
 */
 
--- ============================================================
--- PASO 1: LIMPIEZA PREVIA
--- Elimina datos de prueba anteriores si existieran,
--- respetando el orden de las llaves foráneas
--- ============================================================
+/* PASO 1: LIMPIEZA PREVIA */
 
 DELETE FROM Participante
   WHERE idPersona IN (901, 902, 903)
@@ -56,7 +52,9 @@ DELETE FROM Escuela
 COMMIT;
 
 /*PASO 2: DATOS BASE (INSERT DIRECTO EN TABLAS)*/
+
 /*Escuelas*/
+
 INSERT INTO Escuela (idEscuela, nombre, direccion, telefono, correo)
   VALUES (901, 'Escuela Campeones Norte CRUD', 'Calle 80 # 12-45', '6017001001', 'nortecrud@campeones.com');
 
