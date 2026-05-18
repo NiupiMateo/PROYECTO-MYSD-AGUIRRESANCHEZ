@@ -1,8 +1,7 @@
 /* PROYECTO: Formando Campeones
-   CICLO 4 - ELIMINACIÓN PAQUETES ACTORES
+   CICLO  - ELIMINACIÓN PAQUETES ACTORES
    
-   OBJETIVO: Limpiar paquetes de seguridad (actores) antes de recrearlos
-*/
+   OBJETIVO: Limpiar paquetes de seguridad (actores) antes de recrearlos */
 
 /* ELIMINAR PAQUETES ACTORES */
 BEGIN
