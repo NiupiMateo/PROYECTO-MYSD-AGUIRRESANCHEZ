@@ -1,8 +1,7 @@
 /* PROYECTO: Formando Campeones
    CICLO 1
    OBJETIVO: Intentos de ingreso incorrectos para probar restricciones
-   por tipos de datos, nulidades, claves primarias, únicas, foráneas y checks.
-   IMPORTANTE: Ejecutar sentencia por sentencia, porque todas deben fallar intencionalmente. */
+   por tipos de datos, nulidades, claves primarias, únicas, foráneas y checks. */
 
 
 /* ERRORES POR CLAVE PRIMARIA o UNIQUE */
