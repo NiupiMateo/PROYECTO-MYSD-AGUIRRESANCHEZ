@@ -1,5 +1,5 @@
 /* PROYECTO: Formando Campeones
-   CICLO 4 - SEGURIDAD OK
+   CICLO 1 - SEGURIDAD OK
    OBJETIVO: Verificar acceso correcto via paquetes actores (WRAPPERS)
    TESTS: 6 esenciales (PA_ADMINISTRADOR x3, PA_ENTRENADOR x2, PA_GERENTE x1)
 */
