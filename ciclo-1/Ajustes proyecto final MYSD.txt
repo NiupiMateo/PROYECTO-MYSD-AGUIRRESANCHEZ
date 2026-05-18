@@ -1,0 +1,110 @@
+0.General:
+Se añadieron las consultas gerenciales
+PRIMERA:
+COMO gerente,
+QUIERO consultar la cantidad total de jugadores inscritos por  escuela
+PARA PODER evaluar la participación y crecimiento de cada sede.
+SEGUNDO:
+COMO gerente
+QUIERO consultar cuántos pagos están en cada estado
+PARA PODER controlar cada cuenta y ver la morosidad
+TERCERA:
+COMO gerente
+QUIERO conocer el promedio de jugadores por entrenamiento
+PARA PODER evaluar asistencia y capacidad de los grupos.
+CUARTA:
+COMO gerente
+QUIERO  consultar las escuelas con mayor número de inscritos
+PARA PODER evaluar desempeño y demanda de cada una.
+QUINTA:
+COMO gerente
+QUIERO saber cuántos entrenamientos tiene cada equipo
+PARA PODER medir su nivel de actividad deportiva.
+
+Se arreglaron las consultas operativas dándole su respectivo detalle a todas y definición de actores 
+se añadieron los colores del crud.
+
+Cambios realizados al diagrama conceptual
+Diagrama conceptual – Ciclos 1 y 2 (General)
+Relación Persona – Evaluación
+La relación entre Persona y Evaluación se mantuvo correctamente definida de la siguiente manera:
+Persona: *
+Evaluación: 1
+Interpretación
+Una persona puede tener múltiples evaluaciones.
+Cada evaluación pertenece únicamente a una persona.
+Por lo anterior, no fue necesario realizar cambios en esta relación.
+
+Relación Persona – Asistencia
+Inicialmente, la relación se encontraba definida así:
+Persona: 1..*
+Asistencia: 1
+Interpretación inicial
+Una persona debe tener una o varias asistencias.
+Cada asistencia pertenece a una sola persona.
+Sin embargo, se identificó que una persona puede existir en el sistema sin haber registrado asistencias todavía. Por esta razón, la relación fue corregida a:
+Persona: 0..*
+Asistencia: 1
+Interpretación corregida
+Una persona puede no tener asistencias o tener múltiples asistencias.
+Cada asistencia pertenece únicamente a una persona.
+
+Relación Entrenamiento – Evaluación
+Inicialmente, la relación estaba definida así:
+Entrenamiento: 1
+Evaluación: 1..*
+Interpretación inicial
+Un entrenamiento debía tener obligatoriamente una o varias evaluaciones.
+Cada evaluación pertenece a un entrenamiento.
+Se realizó una corrección debido a que puede existir un entrenamiento sin evaluaciones registradas aún. Por ello, la relación quedó definida de la siguiente manera:
+Entrenamiento: 1
+Evaluación: 0..*
+Interpretación corregida
+Un entrenamiento puede no tener evaluaciones o tener múltiples evaluaciones.
+Cada evaluación pertenece a un único entrenamiento.
+
+Relación Equipo – Categoría
+Inicialmente, la relación se encontraba invertida, lo cual implicaba incorrectamente que una categoría solo podía tener un equipo.
+La relación original era:
+Equipo: 1
+Categoría: 1..*
+Después de analizar el modelo de negocio, se corrigió la relación de la siguiente forma:
+Equipo: 1..*
+Categoría: 1
+Interpretación corregida
+Un equipo pertenece a una sola categoría.
+Una categoría puede tener múltiples equipos.
+Esta corrección permite representar adecuadamente las diferentes categorías deportivas dentro de la escuela y los múltiples equipos asociados a cada una de ellas.
+
+Funciones:
+Se agrego una función mas, además se pusieron los colores correspondientes
+
+Diagrama Conceptual Extendido
+Añadimos las líneas puntiagudas de las tablas asociativas
+Arreglamos relación Equipo-Categoría
+
+Diagrama Lógico: 
+Debido al cambio que se hizo en la multiplicidad en el diagrama conceptual extendido y general, se verifico que todos los atributos estuvieran, y  todas las fks y pk estuvieran correctamente conectadas
+
+
+Componentes:
+Se corrigió el diagrama de Componentes pasando de 2 paquetes generales (PK_ADMINISTRADOR y PK_ENTRENADOR) a 6 paquetes específicos basados en el diagrama de Funciones, un paquete por cada caso de uso. Los paquetes resultantes son PC_PERSONA, PC_EQUIPO, PC_INSCRIPCION, PC_PAGO, PC_ASISTENCIA y PC_ENTRENAMIENTO. A cada paquete se le agregaron sus operaciones CRUD correspondientes (AD_, MO_, EL_, CO_) con el tipo de dato de cada atributo, y se añadió una nota explicativa indicando qué retorna el cursor de consulta de cada uno. Además se asignaron los colores correspondientes a cada paquete según el diagrama de Funciones. Además de la misma manera se corrigió el código.
+
+Seguridad:
+Se agregaron las operativas faltantes además se añadió un nuevo paquete gerente, y se elimino el paquete auditorias
+se agregaron colores
+
+Datos:
+Se agregaron las correcciones correspondiente,  se añadieron pks faltantes en tablas además del orden en tablas asociativas, se agregaron los índices, acciones referenciales, se arreglaron estereotipos y multiplicidades.
+
+
+Implementación
+Se agregaron mas datos en el poblarok 
+se arreglaron errores de acciones y accionesok 
+Se añadieron los archivos correspondientes al crude y crudi además se corrigieron errores de crudok 
+se arreglo seguridad y seguridadok 
+
+
+
+
+
